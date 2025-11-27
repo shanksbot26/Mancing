@@ -230,7 +230,7 @@ ResizeHandle.MouseButton1Down:Connect(function() isResizing = true resizeStartPo
 UserInputService.InputEnded:Connect(function(i) if i.UserInputType == Enum.UserInputType.MouseButton1 then isResizing = false end end)
 UserInputService.InputChanged:Connect(function(i) if isResizing and i.UserInputType == Enum.UserInputType.MouseMovement then local d = UserInputService:GetMouseLocation() - resizeStartPos MainFrame.Size = UDim2.new(0, math.clamp(resizeStartSize.X.Offset + d.X, MIN_W, MAX_W), 0, math.clamp(resizeStartSize.Y.Offset + d.Y, MIN_H, MAX_H)) end end)
 
-local Title = Instance.new("TextLabel", MainFrame) Title.Size = UDim2.new(1, 0, 0, 40) Title.BackgroundTransparency = 1 Title.Text = "DANU SCRIPT" Title.TextColor3 = Color3.fromRGB(255, 100, 100) Title.TextSize = 20 Title.Font = Enum.Font.GothamBold
+local Title = Instance.new("TextLabel", MainFrame) Title.Size = UDim2.new(1, 0, 0, 40) Title.BackgroundTransparency = 1 Title.Text = "KACONK SCRIPT" Title.TextColor3 = Color3.fromRGB(255, 100, 100) Title.TextSize = 20 Title.Font = Enum.Font.GothamBold
 local Subtitle = Instance.new("TextLabel", MainFrame) Subtitle.Size = UDim2.new(1, -120, 0, 18) Subtitle.Position = UDim2.new(0, 10, 0, 38) Subtitle.BackgroundTransparency = 1 Subtitle.Text = "[Fish It Auto Farm]" Subtitle.TextColor3 = Color3.fromRGB(140, 140, 150) Subtitle.TextSize = 10 Subtitle.Font = Enum.Font.Gotham Subtitle.TextXAlignment = Enum.TextXAlignment.Left
 
 local TabContainer = Instance.new("Frame", MainFrame) TabContainer.Size = UDim2.new(1, -40, 0, 35) TabContainer.Position = UDim2.new(0, 20, 0, 60) TabContainer.BackgroundTransparency = 1
