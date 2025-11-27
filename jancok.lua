@@ -216,7 +216,7 @@ local function StartBlatantLoop()
         task.wait(0.01)
     end
 end
-local ScreenGui = Instance.new("ScreenGui") ScreenGui.Name = "DanuScript" ScreenGui.ResetOnSpawn = false ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local ScreenGui = Instance.new("ScreenGui") ScreenGui.Name = "KaconkScript" ScreenGui.ResetOnSpawn = false ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 local MIN_W, MIN_H, MAX_W, MAX_H, DEF_W, DEF_H = 300, 450, 550, 750, 380, 620
 
 local MainFrame = Instance.new("Frame") MainFrame.Size = UDim2.new(0, DEF_W, 0, DEF_H) MainFrame.Position = UDim2.new(0.5, -DEF_W/2, 0.5, -DEF_H/2) MainFrame.BackgroundColor3 = Color3.fromRGB(18, 18, 24) MainFrame.BorderSizePixel = 0 MainFrame.Active = true MainFrame.Draggable = true MainFrame.ClipsDescendants = true MainFrame.Parent = ScreenGui
@@ -360,7 +360,7 @@ local function MakeHelpSection(parent, title, content, order)
     local d = Instance.new("TextLabel", c) d.Size = UDim2.new(1, 0, 0, 0) d.Position = UDim2.new(0, 0, 0, 22) d.BackgroundTransparency = 1 d.Text = content d.TextColor3 = Color3.fromRGB(180, 180, 190) d.TextSize = 10 d.Font = Enum.Font.Gotham d.TextXAlignment = Enum.TextXAlignment.Left d.TextYAlignment = Enum.TextYAlignment.Top d.TextWrapped = true d.AutomaticSize = Enum.AutomaticSize.Y
 end
 
-MakeHelpSection(HelpFrame, "[PANDUAN PEMULA]", "Selamat datang di Danu Script!\n\n1. Klik [START FISHING] untuk mulai\n2. Script akan otomatis cast, shake, dan reel\n3. Ikan akan tercatch otomatis\n4. Gunakan Auto Sell agar inventory tidak penuh", 1)
+MakeHelpSection(HelpFrame, "[PANDUAN PEMULA]", "Selamat datang di Kaconk Script!\n\n1. Klik [START FISHING] untuk mulai\n2. Script akan otomatis cast, shake, dan reel\n3. Ikan akan tercatch otomatis\n4. Gunakan Auto Sell agar inventory tidak penuh", 1)
 
 MakeHelpSection(HelpFrame, "[INSTANT FISH]", "Mode tercepat untuk farming!\n\nCara pakai:\n- Nyalakan Instant Fish: ON\n- Klik [START FISHING]\n\nPenjelasan:\n- Skip animasi cast dan reel\n- Langsung complete fishing\n- Cocok untuk farming cepat\n\nRekomendasi Setting:\n- Charge Time: 0\n- Reel Delay: 0\n- Fish Delay: 0.01", 2)
 
